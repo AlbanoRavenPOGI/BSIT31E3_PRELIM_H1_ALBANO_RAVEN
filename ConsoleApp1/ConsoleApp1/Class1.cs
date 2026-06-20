@@ -3,22 +3,23 @@ using System.Collections.Generic;
 
 namespace StudentManagementSystem
 {
- 
     public class Student
     {
-        public string Name { get; set; }
-        public double Grade { get; set; }
 
-     
+        public string Name;
+        public double Grade;
+
         public Student(string name, double grade)
         {
             Name = name;
             Grade = grade;
         }
     }
+
     public class StudentManager
     {
-        public List<Student> Students { get; private set; } = new List<Student>();
+
+        public List<Student> Students = new List<Student>();
 
         public void AddStudent(string name, double grade)
         {
@@ -31,6 +32,7 @@ namespace StudentManagementSystem
             double sum = 0;
             foreach (var student in Students)
             {
+        
                 sum += student.Grade;
             }
             return sum / Students.Count;
@@ -42,6 +44,7 @@ namespace StudentManagementSystem
             Student top = Students[0];
             foreach (var student in Students)
             {
+              
                 if (student.Grade > top.Grade)
                 {
                     top = student;
@@ -51,4 +54,3 @@ namespace StudentManagementSystem
         }
     }
 }
-
