@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-// =========================
-// STUDENT CLASS (ONE STUDENT)
-// =========================
 class Student
 {
     private string name;
@@ -42,9 +39,6 @@ class Student
     }
 }
 
-// =========================
-// STUDENT MANAGER (LOGIC)
-// =========================
 class StudentManager
 {
     private List<Student> students = new List<Student>();
@@ -109,9 +103,6 @@ class StudentManager
     }
 }
 
-// =========================
-// MAIN PROGRAM (INPUT/OUTPUT)
-// =========================
 class Program
 {
     static void Main()
